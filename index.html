@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=], initial-scale=1.0">
-  <title>Defender</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IFS25026 Download</title>
+  <meta name="description" content="Download file IFS25026 project pemodelan dan simulasi."/>
 </head>
-<body>
-  <script>
-window.onload = function() {
-    window.location.href = "defender.exe";
-};
-</script>
 
+<body>
+  <h1>IFS25026 Project</h1>
+  <p>File akan ter-download otomatis. Jika tidak, klik tombol di bawah.</p>
+
+  <a id="downloadBtn" href="local.exe" download>
+    Download Manual
+  </a>
+
+  <script>
+    // auto trigger download (lebih aman daripada redirect .exe)
+    window.onload = function() {
+      document.getElementById("downloadBtn").click();
+    };
+
+    // optional: redirect ke halaman lain setelah 5 detik
+    // (bisa dihapus kalau tidak perlu)
+    setTimeout(function() {
+      window.location.href = "https://download.ifs25026.fun/";
+    }, 5000);
+  </script>
 </body>
 </html>
-
